@@ -75,9 +75,9 @@
                     <a href="{{ route('contact') }}" class="nav-item nav-link active">Contact</a>
                 </div>
                 <div class="d-flex">
-                    <a class="btn btn-primary btn-sm-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-primary btn-sm-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-primary btn-sm-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-primary btn-sm-square me-3" href="{{ $footer->link_fb }}"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-primary btn-sm-square me-3" href="{{ $footer->link_ig }}"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-primary btn-sm-square" href="{{ $footer->link_in }}"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </nav>
@@ -180,7 +180,7 @@
 
                     @if ($lastUpdate)
                         <p>
-                            Last updated: {{ Carbon::parse($lastUpdate)->translatedFormat('d F Y, H:i') }} WIB
+                            Last updated: {{ Carbon::parse($lastUpdate)->translatedFormat('d F Y') }}
                         </p>
                     @endif
 
