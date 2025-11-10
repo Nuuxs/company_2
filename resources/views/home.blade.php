@@ -18,7 +18,7 @@
                         <div class="row g-4 animated slideInLeft">
                             <div class="col-md-6">
                                 <div class="d-flex align-items-center">
-                                    <div class="btn-square btn btn-primary flex-shrink-0">
+                                    <div class="btn-square btn btn-primary flexshrink-0">
                                         <i class="fa fa-phone text-dark"></i>
                                     </div>
                                     <div class="px-3">
@@ -29,7 +29,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="d-flex align-items-center">
-                                    <div class="btn-square btn btn-primary flex-shrink-0">
+                                    <div class="btn-square btn btn-primary flexshrink-0">
                                         <i class="fa fa-envelope text-dark"></i>
                                     </div>
                                     <div class="px-3">
@@ -69,7 +69,7 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
                     <img class="img-fluid mb-3" src="{{ asset($setting->gambar) }}" alt="">
                     <div class="d-flex align-items-center bg-light">
-                        <div class="btn-square flex-shrink-0 bg-primary" style="width: 100px; height: 100px;">
+                        <div class="btn-square flexshrink-0 bg-primary" style="width: 100px; height: 100px;">
                             <i class="fa fa-phone fa-2x text-dark"></i>
                         </div>
                         <div class="px-3">
@@ -128,6 +128,8 @@
     </div>
     <!-- Service End -->
 
+    <p>ni cjashdkaksd</p>
+
 
     <!-- Pricing Start -->
     <div class="container-fluid price px-0 py-5">
@@ -158,7 +160,7 @@
                 <div class="h-100 bg-dark p-5">
                     @foreach ($daftarprices as $item )
                     <div class="price-item mb-3 wow fadeIn" data-wow-delay="0.1s">
-                        <img class="img-fluid flex-shrink-0" src="{{ asset($item->gambar) }}" alt="" style="width: 100px;">
+                        <img class="img-fluid flexshrink-0" src="{{ asset($item->gambar) }}" alt="" style="width: 100px;">
                         <div class="text-end px-4">
                             <h6 class="text-uppercase text-primary">{{ $item->nama_kategori }}</h6>
                             <h3 class="text-white font-work-sans mb-0">${{ $item->harga }}</h3>
